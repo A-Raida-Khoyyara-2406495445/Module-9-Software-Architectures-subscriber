@@ -1,3 +1,4 @@
+# Module-9-Software-Architectures-subscriber
 # Understanding Subscriber and Message Broker
 
 ## a. What is AMQP?
@@ -85,4 +86,3 @@ Terminal 3:
 - 'UserCreatedEventMessage { user_id: "5", user_name: "2406495445-Emir" }'
 
 Hasil tersebut menunjukkan bahwa RabbitMQ berhasil mendistribusikan event ke beberapa subscriber secara bergiliran, sehingga beban pemrosesan queue dapat terbagi lebih merata antar subscriber yang aktif.
-
