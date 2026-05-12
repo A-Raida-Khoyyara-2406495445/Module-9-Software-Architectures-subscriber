@@ -1,4 +1,3 @@
-# Module-9-Software-Architectures-subscriber
 # Understanding Subscriber and Message Broker
 
 ## a. What is AMQP?
@@ -20,7 +19,7 @@ Jadi, alamat tersebut berarti program mencoba terhubung ke RabbitMQ lokal menggu
 
 Pada percobaan ini, subscriber dikonfigurasi untuk memproses pesan secara lambat dengan menambahkan `thread::sleep(time::Duration::from_millis(1000))` pada fungsi `handle`.
 
-![Slow Subscriber](assets/images/slowsubscriber.png)
+![Slow Subscriber](assets/images/slowsubscriber1.png)
 
 ### Mengapa jumlah antrean (queue) bisa menumpuk?
 
