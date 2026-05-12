@@ -73,14 +73,16 @@ Pada tampilan RabbitMQ Management yang di-host pada Railway, broker berhasil ber
 
 Selain itu, distribusi message pada RabbitMQ cloud menunjukkan bahwa mekanisme round-robin berjalan dengan baik. Berdasarkan hasil pada masing-masing terminal subscriber, event dibagikan secara bergantian sebagai berikut:
 
-Terminal 1 menerima:
-'UserCreatedEventMessage { user_id: "3", user_name: "2406495445-Cica" }'
-Terminal 2 menerima:
-'UserCreatedEventMessage { user_id: "1", user_name: "2406495445-Amir" }'
-'UserCreatedEventMessage { user_id: "4", user_name: "2406495445-Dira" }'
-Terminal 3 menerima:
-'UserCreatedEventMessage { user_id: "2", user_name: "2406495445-Budi" }'
-'UserCreatedEventMessage { user_id: "5", user_name: "2406495445-Emir" }'
+Terminal 1:
+- 'UserCreatedEventMessage { user_id: "3", user_name: "2406495445-Cica" }'
+
+Terminal 2:
+- 'UserCreatedEventMessage { user_id: "1", user_name: "2406495445-Amir" }'
+- 'UserCreatedEventMessage { user_id: "4", user_name: "2406495445-Dira" }'
+
+Terminal 3:
+- 'UserCreatedEventMessage { user_id: "2", user_name: "2406495445-Budi" }'
+- 'UserCreatedEventMessage { user_id: "5", user_name: "2406495445-Emir" }'
 
 Hasil tersebut menunjukkan bahwa RabbitMQ berhasil mendistribusikan event ke beberapa subscriber secara bergiliran, sehingga beban pemrosesan queue dapat terbagi lebih merata antar subscriber yang aktif.
 
